@@ -1,0 +1,156 @@
+
+
+body{
+    background-color: #e7e7e7;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.post-card{
+    background-color: white;
+    border-radius: 10px;
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 2px #c7c7c7;
+}
+
+
+.name{
+    font-size: 19px;
+}
+
+.date{
+    font-size: 15px;
+    color: #bcbcbc;
+}
+
+.profile{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.bold-name{
+    font-weight: bold;
+}
+
+.description{
+    height: 100%;
+    flex-grow: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.profile-header{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 10px 20px 0px;
+}
+
+.post-content{
+    flex-grow: 0.8;
+    background-image: url(../Images/Ex1/paris-street3.jpg);
+    width: 100;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px 20px 0px;
+}
+
+.play-btn{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-container{
+    border-radius: 50%;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #959595;
+    border-right: 0;
+}
+
+.topic{
+    font-size: 25px;
+    color: white;
+}
+
+.content-date{
+    color: #ccc9cc;
+    font-size: 15px;
+}
+
+.symbol{
+    width: 20px;
+    height: 20px;
+}
+
+.interaction-container{
+    display: grid;
+    gap: 20px;
+    height: 10%;
+    grid-template-columns: auto auto 1fr;
+    margin: 5px 20px 0px;
+}
+
+.sym-cont{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-end;
+    font-size: 17px;
+    color: #959595;
+}
+
+.profile-cmt{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comment-section{
+    background-color: #f7f7f7;
+    border-top: 3px solid #ececec;
+    flex-grow: 0.2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 20px;
+    font-size: 20px;
+    color: #8b8b8b;
+}
+.symbol-container{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+@media (max-width: 800px)
+{
+    .post-card{
+        width: 70%;
+    }
+}
