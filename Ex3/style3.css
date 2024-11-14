@@ -41,9 +41,16 @@ body{
 .delivery-container{
     display: flex;
     flex-direction: column;
-    height: 25%;
+    height: 20%;
     gap: 5px;
     justify-content: center;
+}
+
+.express-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .delivery-label{
@@ -59,8 +66,7 @@ body{
     background-color: #f7f7f7;
     border-radius: 10px;
     width: 45%;
-    justify-content: space-between;
-    height: 55%;
+    height: 35%;
     padding: 1px;
     font-size: 15px;
     font-weight: 400;
@@ -144,8 +150,8 @@ body{
 .price-container{
     height: 25%;
     gap: 15px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .price-inner-container{
@@ -184,7 +190,7 @@ p{
 
 .total-container{
     height: 30%;
-    gap: 10px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -320,11 +326,6 @@ p{
     font-size: 10px;
 }
 
-.right-toolbar{
-    font-size: 12px;
-    color: #585656;
-}
-
 .heart-trash{
     color: #565656;
 }
@@ -355,7 +356,10 @@ p{
 .right-toolbar{
     display: flex;
     gap: 15px;
+    font-size: 12px;
+    color: #585656;
 }
+
 
 .up-down-container{
     display: flex;
